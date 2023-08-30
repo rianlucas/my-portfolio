@@ -2,6 +2,7 @@ import Header from "../Components/Header";
 import code from "../assets/code-snippet 2.png"
 import green from "../assets/Green.png"
 import blue from "../assets/Blue.png"
+import Footer from "../Components/Footer";
 
 export default function Home() {
   return (
@@ -43,7 +44,8 @@ export default function Home() {
 
       </div>
       
-
+      <Footer/>
+    
 
     </div>
   )

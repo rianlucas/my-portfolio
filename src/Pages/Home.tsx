@@ -11,7 +11,7 @@ export default function Home() {
         <Header/> 
       </div>
       
-      <div className="flex min-h-[93vh] items-center justify-center">
+      <div className="flex items-center justify-center h-home">
 
         <div className="text-white pl-60 pr-20 ">
           <div className="pb-20 ">
@@ -34,8 +34,8 @@ export default function Home() {
         </div>
 
           <div className="max-w-2xl pr-5 relative">
-            <img className="opacity-30 absolute bottom-60 right-32" src={ green } alt="" />
             <img className="opacity-30 absolute top-60 max-w-sm" src={ blue } alt="" />
+            <img className="opacity-30 absolute bottom-60 right-32" src={ green } alt="" />
             <img className="py-2 bg-repeat-y opacity-30" src={ code } alt="" />
             <img className="py-4 bg-repeat-y" src={ code } alt="" />
             <img className="py-2 bg-repeat-y opacity-30 relative" src={ code } alt="" />

@@ -9,6 +9,9 @@ export default {
       fontFamily: {
         // 'mono':['Fira Code', 'IBM Plex Mono'],
         'fira-code': ['FiraCode', 'monospace']
+      },
+      spacing: {
+        'home': 'calc(100vh - 3.56rem)',
       }
     },
   },

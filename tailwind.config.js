@@ -11,7 +11,7 @@ export default {
         'fira-code': ['FiraCode', 'monospace']
       },
       spacing: {
-        'home': 'calc(100vh - 7.40rem)',
+        'home': 'calc(100vh - 7.39rem)',
       }
     },
   },

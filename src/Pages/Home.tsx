@@ -1,17 +1,10 @@
-import Header from "../Components/Header";
 import code from "../assets/code-snippet 2.png"
 import green from "../assets/Green.png"
 import blue from "../assets/Blue.png"
-import Footer from "../Components/Footer";
 
 export default function Home() {
   return (
     <div>
-
-      <div className="max-w-screen mx-auto box-border">
-        <Header/> 
-      </div>
-      
       <div className="flex items-center justify-center h-home">
 
         <div className="text-white pl-60 pr-20 ">
@@ -42,10 +35,7 @@ export default function Home() {
             <img className="py-2 bg-repeat-y opacity-30 relative" src={ code } alt="" />
           </div>
 
-      </div>
-      
-      <Footer/>
-    
+      </div>    
 
     </div>
   )

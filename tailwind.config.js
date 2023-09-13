@@ -12,6 +12,9 @@ export default {
       },
       spacing: {
         'home': 'calc(100vh - 7.39rem)',
+      },
+      colors:{
+        'default-border-color': '#1d2b39',
       }
     },
   },

@@ -4,7 +4,7 @@ import ProfessionalInfo  from '../assets/icons/professional-info-icon.png'
 import BioFolder  from '../assets/icons/Vector.png'
 import EducationFolder  from '../assets/icons/EducationFolder.png'
 import InterestsFolder  from '../assets/icons/InterestsFolder.png'
-import FaqSidebar from './aboutMe/FaqSidebar'
+import FolderInfo from './aboutMe/FoldersInfo'
 
 export default function SideBarAboutMe() {
   return (
@@ -31,9 +31,9 @@ export default function SideBarAboutMe() {
               <span className='pr-2'>personal-info</span>
             </summary>
             
-            <FaqSidebar folder={BioFolder} summaryText='bio' detailsDescription='personal-info'/>
-            <FaqSidebar folder={InterestsFolder} summaryText='interests' detailsDescription='technology'/>
-            <FaqSidebar folder={EducationFolder} summaryText='education' detailsDescription='university'/>
+            <FolderInfo folder={BioFolder} summaryText='bio' detailsDescription='personal-info'/>
+            <FolderInfo folder={InterestsFolder} summaryText='interests' detailsDescription='technology'/>
+            <FolderInfo folder={EducationFolder} summaryText='education' detailsDescription='university'/>
 
           </details>
         </div>

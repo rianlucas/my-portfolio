@@ -1,10 +1,13 @@
 import HobbiesIcon  from '../assets/icons/hobbies-icon.png'
 import PersonalInfo  from '../assets/icons/personal-info-icon.png'
 import ProfessionalInfo  from '../assets/icons/professional-info-icon.png'
+import FaqSection from './aboutMe/FaqSection'
 import BioFolder  from '../assets/icons/Vector.png'
 import EducationFolder  from '../assets/icons/EducationFolder.png'
 import InterestsFolder  from '../assets/icons/InterestsFolder.png'
 import FolderInfo from './aboutMe/FoldersInfo'
+import PhoneIcon from '../assets/icons/phone-icon.png'
+import MailIcon from '../assets/icons/mail-icon.png'
 
 export default function SideBarAboutMe() {
   return (
@@ -25,18 +28,23 @@ export default function SideBarAboutMe() {
 
       <div className='border-r border-r-default-border-color'>
 
-        <div className='text-white border-b border-default-border-color pb-5'>
-          <details>
-            <summary className='mb-4 pl-5 pr-[5.75rem] py-4 border-b border-default-border-color border-l-0 border-t-0'>
-              <span className='pr-2'>personal-info</span>
-            </summary>
-            
-            <FolderInfo folder={BioFolder} summaryText='bio' detailsDescription='personal-info'/>
-            <FolderInfo folder={InterestsFolder} summaryText='interests' detailsDescription='technology'/>
-            <FolderInfo folder={EducationFolder} summaryText='education' detailsDescription='university'/>
+        <FaqSection name='personal-info'>
+          <FolderInfo folder={BioFolder} summaryText='bio' detailsDescription='personal-info'/>
+          <FolderInfo folder={InterestsFolder} summaryText='interests' detailsDescription='technology'/>
+          <FolderInfo folder={EducationFolder} summaryText='education' detailsDescription='university'/>
+        </FaqSection>
 
-          </details>
-        </div>
+        <FaqSection name='contacts'>
+          <div className='flex px-4 items-center'>
+            <img src={MailIcon} className="w-4 h-4" />
+            <p className='px-1'>rianlucas@hotmail.com</p>
+          </div>
+
+          <div className='flex px-4 py-1 items-center'>
+            <img src={PhoneIcon} className="w-4 h-4" />
+            <p className='px-1'>5583982146458</p>
+          </div>
+        </FaqSection>
         
       </div>
 

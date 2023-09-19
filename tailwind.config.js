@@ -15,6 +15,7 @@ export default {
       },
       colors:{
         'default-border-color': '#1d2b39',
+        'default-text-color': '#607B96',
       }
     },
   },

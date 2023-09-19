@@ -17,14 +17,14 @@ export default function FaqSidebar (props: FaqSidebar) {
           <i className='pr-2'>
             <img src={props.folder} alt="" />
           </i>
-          {props.summaryText}
+          <p className="hover:text-white transition-all cursor-pointer">{props.summaryText}</p> 
         </summary>
 
         <div className='flex items-center pl-7 py-1'>
           <i className='pr-2'>
             <img src={MarkDown} alt="" />
           </i>
-          {props.detailsDescription}
+          <p className="hover:text-gray-300 cursor-pointer transition-all">{props.detailsDescription}</p> 
         </div>
         
       </details>

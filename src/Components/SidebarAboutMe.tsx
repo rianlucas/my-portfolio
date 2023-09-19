@@ -42,7 +42,7 @@ export default function SideBarAboutMe() {
 
           <div className='flex px-4 py-1 items-center'>
             <img src={PhoneIcon} className="w-4 h-4" />
-            <p className='px-1'>5583982146458</p>
+            <p className='px-1'>+5583982146458</p>
           </div>
         </FaqSection>
         

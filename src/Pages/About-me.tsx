@@ -1,4 +1,4 @@
-import SideBarAboutMe  from "../Components/SidebarAboutMe"
+import SideBarAboutMe  from "../Components/aboutMe/SidebarAboutMe"
 
 export default function AboutMe() {
   return (

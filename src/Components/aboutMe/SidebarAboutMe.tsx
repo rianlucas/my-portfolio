@@ -1,13 +1,13 @@
-import HobbiesIcon  from '../assets/icons/hobbies-icon.png'
-import PersonalInfo  from '../assets/icons/personal-info-icon.png'
-import ProfessionalInfo  from '../assets/icons/professional-info-icon.png'
-import FaqSection from './aboutMe/FaqSection'
-import BioFolder  from '../assets/icons/Vector.png'
-import EducationFolder  from '../assets/icons/EducationFolder.png'
-import InterestsFolder  from '../assets/icons/InterestsFolder.png'
-import FolderInfo from './aboutMe/FoldersInfo'
-import PhoneIcon from '../assets/icons/phone-icon.png'
-import MailIcon from '../assets/icons/mail-icon.png'
+import HobbiesIcon  from '../../assets/icons/hobbies-icon.png'
+import PersonalInfo  from '../../assets/icons/personal-info-icon.png'
+import ProfessionalInfo  from '../../assets/icons/professional-info-icon.png'
+import FaqSection from './FaqSection'
+import BioFolder  from '../../assets/icons/Vector.png'
+import EducationFolder  from '../../assets/icons/EducationFolder.png'
+import InterestsFolder  from '../../assets/icons/InterestsFolder.png'
+import FolderInfo from './FoldersInfo'
+import PhoneIcon from '../../assets/icons/phone-icon.png'
+import MailIcon from '../../assets/icons/mail-icon.png'
 
 export default function SideBarAboutMe() {
   return (

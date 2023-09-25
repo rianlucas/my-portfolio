@@ -3,8 +3,6 @@ type ContainerProps = {
   name: string;
 };
 
-// border-b border-default-border-color
-
 export default function FaqSection(props: ContainerProps) {
   return (
     <div className='text-default-text-color border-t border-default-border-color'>

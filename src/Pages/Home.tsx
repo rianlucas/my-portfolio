@@ -17,9 +17,10 @@ export default function Home() {
 
           <div>
             <p className="whitespace-nowrap text-[#43D9AD]">
-              const githubLink =  
+              $githubLink 
+              <span className="text-white"> =</span>
               <span className="text-[#E99287] px-2 select-all">
-                 "https://github.com/rianlucas" 
+                 https://github.com/rianlucas
               </span> 
             </p>
           </div>

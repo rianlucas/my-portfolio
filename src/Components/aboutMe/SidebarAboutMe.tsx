@@ -8,22 +8,23 @@ import InterestsFolder  from '../../assets/icons/InterestsFolder.png'
 import FolderInfo from './FoldersInfo'
 import PhoneIcon from '../../assets/icons/phone-icon.png'
 import MailIcon from '../../assets/icons/mail-icon.png'
+import { Link } from 'react-router-dom'
 
 export default function SideBarAboutMe() {
   return (
     <div className='h-home flex font-mono'>
       <div className='px-4 first-line:h-home flex flex-col items-center max-w-[3.75rem] border-r  border-r-default-border-color'>
-        <a href="#">
+        <Link to="#">
           <img className='py-4 ' src={ ProfessionalInfo  } alt="" />
-        </a>
+        </Link>
 
-        <a href="#">
+        <Link to="#">
           <img className='py-4' src={ PersonalInfo } alt="" />
-        </a>
+        </Link>
 
-        <a href="#">
+        <Link to="#">
           <img className='py-4' src={ HobbiesIcon } alt="" />
-        </a>
+        </Link>
       </div>
 
       <div className='border-r border-r-default-border-color'>

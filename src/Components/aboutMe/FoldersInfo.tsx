@@ -1,4 +1,5 @@
 import MarkDown  from '../../assets/icons/Markdown.png'
+import { Link } from 'react-router-dom';
 
 interface FaqSidebar {
   folder: string;
@@ -24,7 +25,7 @@ export default function FaqSidebar (props: FaqSidebar) {
           <i className='pr-2'>
             <img src={MarkDown} alt="" />
           </i>
-          <p className="hover:text-gray-300 cursor-pointer transition-all">{props.detailsDescription}</p> 
+          <Link to='/aboutMe/PersonalInfo' className="hover:text-gray-300 cursor-pointer transition-all">{props.detailsDescription}</Link> 
         </div>
         
       </details>

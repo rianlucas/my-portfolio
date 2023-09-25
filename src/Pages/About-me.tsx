@@ -1,34 +1,25 @@
-import SideBarAboutMe  from "../Components/aboutMe/SidebarAboutMe"
-import DescribeLine from "../Components/aboutMe/DescribeLine"
+import PersonalInfo from "../Components/aboutMe/MdFiles/PersonalInfo";
+import SyntaxHighlighter from 'react-syntax-highlighter';
+import { atomOneDark } from 'react-syntax-highlighter/dist/esm/styles/hljs';
 
 export default function AboutMe() {
-  return (
-    <div className="flex">
-      <SideBarAboutMe />
-      
-      <div className=" grow grid grid-cols-2 ">
 
-        <div className="text-default-text-color border border-default-border-color py-12">
-          <div className="max-w-lg">
-            <DescribeLine line={1} text="/**"/>
-            <DescribeLine line={2} text="* About me"/>
-            <DescribeLine line={3} text="* lorem ipsm dolar emet "/>
-            <DescribeLine line={4} text="* lorem ipsm dolar emet"/>
-            <DescribeLine line={5} text="* lorem ipsm dolar emet"/>
-            <DescribeLine line={6} text="* lorem ipsm dolar emet"/>
-            <DescribeLine line={7} text="* lorem ipsm dolar emet"/>
-            <DescribeLine line={8} text="* lorem ipsm dolar emet"/>
-            <DescribeLine line={9} text="* lorem ipsm dolar emet"/>
-            <DescribeLine line={10} text="* lorem ipsm dolar emet"/>
-            <DescribeLine line={11} text="* lorem ipsm dolar emet"/>
-            <DescribeLine line={12} text="* lorem ipsm dolar emet"/>
-            <DescribeLine line={13} text="* lorem ipsm dolar emet"/>
-            <DescribeLine line={14} text="*/"/>
-          </div>
+  return (
+    <div className="flex grow">
+    
+      <div className="grow grid grid-cols-2">
+
+        <div className="text-default-text-color border-r border-default-border-color py-12">
+          <PersonalInfo/>
         </div>
         
         <div className="">
-          <p>teste</p>
+          <SyntaxHighlighter languague="tsx" style={atomOneDark} customStyle={{
+            backgroundColor: '#011221',
+            font: '1rem',
+          }}>
+            `function AboutMe(){}`
+          </SyntaxHighlighter>
         </div>
 
       </div>

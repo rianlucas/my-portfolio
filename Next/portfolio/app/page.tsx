@@ -1,6 +1,7 @@
 import code from "./assets/code-snippet 2.png"
 import green from "./assets/Green.png"
 import blue from "./assets/Blue.png"
+import Image from "next/image"
 
 export default function Home() {
   return (
@@ -29,11 +30,11 @@ export default function Home() {
         </div>
 
           <div className="max-w-2xl pr-5 relative">
-            <img className="opacity-30 absolute top-60 max-w-sm" src={ blue.src } alt="" />
-            <img className="opacity-30 absolute bottom-60 right-32" src={ green.src } alt="" />
-            <img className="py-2 bg-repeat-y opacity-30" src={ code.src } alt="" />
-            <img className="py-4 bg-repeat-y" src={ code.src } alt="" />
-            <img className="py-2 bg-repeat-y opacity-30 relative" src={ code.src } alt="" />
+            <Image className="opacity-30 absolute top-60 max-w-sm" width={500} height={500} src={ blue.src } alt="" />
+            <Image className="opacity-30 absolute bottom-60 right-32" width={500} height={500} src={ green.src } alt="" />
+            <Image className="py-2 bg-repeat-y opacity-30" width={500} height={500} src={ code.src } alt="" />
+            <Image className="py-4 bg-repeat-y" width={500} height={500} src={ code.src } alt="" />
+            <Image className="py-2 bg-repeat-y opacity-30 relative" width={500} height={500} src={ code.src } alt="" />
           </div>
 
       </div>    

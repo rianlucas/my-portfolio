@@ -1,5 +1,7 @@
 import MarkDown  from '../../assets/icons/Markdown.png'
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
+import Image from 'next/image'
+
 
 interface FaqSidebar {
   folder: string;
@@ -16,16 +18,16 @@ export default function FaqSidebar (props: FaqSidebar) {
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
         </svg>
           <i className='pr-2'>
-            <img src={props.folder} alt="" />
+            <Image src={props.folder} alt="" />
           </i>
           <p className="hover:text-white transition-all cursor-pointer">{props.summaryText}</p> 
         </summary>
 
         <div className='flex items-center pl-7 py-1'>
           <i className='pr-2'>
-            <img src={MarkDown} alt="" />
+            <Image src={MarkDown} alt="" />
           </i>
-          <Link to='/aboutMe/PersonalInfo' className="hover:text-gray-300 cursor-pointer transition-all">{props.detailsDescription}</Link> 
+          <Link href='/aboutMe/PersonalInfo' className="hover:text-gray-300 cursor-pointer transition-all">{props.detailsDescription}</Link> 
         </div>
         
       </details>

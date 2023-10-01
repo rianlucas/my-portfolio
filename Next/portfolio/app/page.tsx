@@ -1,10 +1,10 @@
-import code from "../assets/code-snippet 2.png"
-import green from "../assets/Green.png"
-import blue from "../assets/Blue.png"
+import code from "./assets/code-snippet 2.png"
+import green from "./assets/Green.png"
+import blue from "./assets/Blue.png"
 
 export default function Home() {
   return (
-    <div>
+   <div className='bg-[#011627] font-fira-code'>
       <div className="flex items-center justify-center h-home">
 
         <div className="text-white pl-60 pr-20 ">
@@ -29,11 +29,11 @@ export default function Home() {
         </div>
 
           <div className="max-w-2xl pr-5 relative">
-            <img className="opacity-30 absolute top-60 max-w-sm" src={ blue } alt="" />
-            <img className="opacity-30 absolute bottom-60 right-32" src={ green } alt="" />
-            <img className="py-2 bg-repeat-y opacity-30" src={ code } alt="" />
-            <img className="py-4 bg-repeat-y" src={ code } alt="" />
-            <img className="py-2 bg-repeat-y opacity-30 relative" src={ code } alt="" />
+            <img className="opacity-30 absolute top-60 max-w-sm" src={ blue.src } alt="" />
+            <img className="opacity-30 absolute bottom-60 right-32" src={ green.src } alt="" />
+            <img className="py-2 bg-repeat-y opacity-30" src={ code.src } alt="" />
+            <img className="py-4 bg-repeat-y" src={ code.src } alt="" />
+            <img className="py-2 bg-repeat-y opacity-30 relative" src={ code.src } alt="" />
           </div>
 
       </div>    

@@ -2,7 +2,7 @@ import DescribeLine from "../DescribeLine"
 
 export default function PersonalInfo(){
   return(
-    <div>
+    <div className="text-default-text-color">
       <DescribeLine line={1} text="/**"/>
       <DescribeLine line={2} text="* Sobre mim"/>
       <DescribeLine line={3} text="* Trabalho com desenvolvimento Web "/>

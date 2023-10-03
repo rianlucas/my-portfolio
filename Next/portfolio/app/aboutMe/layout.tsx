@@ -16,9 +16,11 @@ export default function AboutMeLayout({
   children: React.ReactNode
 }) {
   return (
-    <div className='bg-[#011627] flex'>
+    <div className='bg-[#011627] flex '>
       <SideBarAboutMe />
-      {children}
+      <div className='grow '>
+        {children}
+      </div>
     </div>
   )
 }

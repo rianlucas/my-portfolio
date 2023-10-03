@@ -1,4 +1,5 @@
 import PersonalInfo from "@/app/Components/aboutMe/MdFiles/PersonalInfo";
+import Card from "@/app/Components/card/Card";
 
 interface SectionParams {
   params: {
@@ -16,7 +17,7 @@ export default function section({ params }: SectionParams) {
       </div>
 
       <div>
-        teste
+        <Card/>
       </div>
     </div>
     )

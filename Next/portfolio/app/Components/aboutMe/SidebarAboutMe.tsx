@@ -14,7 +14,7 @@ import Image from 'next/image'
 export default function SideBarAboutMe() {
   return (
     <div className='h-home flex font-mono'>
-      <div className='px-4 first-line:h-home flex flex-col items-center max-w-[3.75rem] border-r  border-r-default-border-color'>
+      <div className='w-[3.4rem] px-4 first-line:h-home flex flex-col items-center max-w-[3.75rem] border-r  border-r-default-border-color'>
         <Link href="#">
           <Image className='py-4 ' src={ ProfessionalInfo  } alt="" />
         </Link>

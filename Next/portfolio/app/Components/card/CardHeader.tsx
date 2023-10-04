@@ -6,7 +6,7 @@ import Star from "../../assets/icons/Star.svg"
 
 export default function CardHeader() {
   return(
-    <div className="flex px-5 py-9 font-mono grow justify-between">
+    <div className="flex px-5 pt-9 pb-2 font-mono grow justify-between">
         <div className="flex">
 
           <div className="pr-3">

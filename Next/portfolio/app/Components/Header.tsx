@@ -14,7 +14,7 @@ export default function Header () {
 
         <div className="flex ">
           <HeaderLinks href="aboutMe" name="_about-me"/>
-          <HeaderLinks href="#" name="_projects"/>
+          <HeaderLinks href="/projects" name="_projects"/>
           <HeaderLinks href="#" name="_articles"/>
         </div>
 

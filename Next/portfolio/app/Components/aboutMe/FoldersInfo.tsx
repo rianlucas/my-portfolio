@@ -14,9 +14,6 @@ export default function FaqSidebar (props: FaqSidebar) {
     <div className='pl-4 py-[0.125rem] '>
       <details>
         <summary className='flex items-center'>
-        <svg className="mr-3 w-4 h-4 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"></path>
-        </svg>
           <i className='pr-2'>
             <Image src={props.folder} alt="" />
           </i>

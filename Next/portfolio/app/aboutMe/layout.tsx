@@ -1,7 +1,12 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import SideBarAboutMe from '../Components/aboutMe/SidebarAboutMe'
-import Header from '../Components/Header'
+import FaqSection from '../Components/aboutMe/FaqSection'
+import FolderInfo from '../Components/aboutMe/FoldersInfo'
+import Contacts from '../Components/aboutMe/SidebarSections/Contacts'
+import BioFolder from '../assets/icons/EducationFolder.png'
+import InterestsFolder from '../assets/icons/InterestsFolder.png'
+import EducationFolder from '../assets/icons/Vector.png'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -17,7 +22,17 @@ export default function AboutMeLayout({
 }) {
   return (
     <div className='bg-[#011627] flex '>
-      <SideBarAboutMe />
+      <SideBarAboutMe isPageAboutMe> 
+
+        <FaqSection name='personal-info'>
+          <FolderInfo folder={BioFolder} summaryText='bio' detailsDescription='personal-info'/>
+          <FolderInfo folder={InterestsFolder} summaryText='interests' detailsDescription='technology'/>
+          <FolderInfo folder={EducationFolder} summaryText='education' detailsDescription='university'/>
+        </FaqSection>
+
+        <Contacts/>
+
+      </ SideBarAboutMe>
       <div className='grow '>
         {children}
       </div>

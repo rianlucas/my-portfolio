@@ -4,7 +4,7 @@ import CodeSnippet from "./CodeSnippet"
 export default function Card() {
   return (
     <div className="p-3 text-default-text-color">
-      <p>Code snippet showcase</p>
+      <p>{`//`} Code snippet showcase</p>
       <CardHeader />
       <CodeSnippet />
     </div>

@@ -27,7 +27,7 @@ export default function Header() {
          <HeaderLinks href="/articles" name="_articles" activeLink={activeLink} onClick={handleLinkClick} />
        </div>
      </div>
-     <HeaderLinks href="#" name="_contact-me" activeLink={activeLink} onClick={handleLinkClick} />
+     <HeaderLinks href="/contactMe" name="_contact-me" activeLink={activeLink} onClick={handleLinkClick} />
    </div>
  );
 }

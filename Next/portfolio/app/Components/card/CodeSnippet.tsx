@@ -1,7 +1,11 @@
 import SyntaxHighlighter from "react-syntax-highlighter/dist/esm/default-highlight"
 import { nightOwl } from "react-syntax-highlighter/dist/esm/styles/hljs"
 
-export default function CodeSnippet() {
+interface CodeSnippetProps {
+  code: string;
+}
+
+export default function CodeSnippet(props: CodeSnippetProps) {
   const code = `
     function initializeModelChunk<T>(chunk: ResolvedModelChunk): T {
       const value: T = parseModel(chunk._response, chunk._value);
@@ -14,14 +18,14 @@ export default function CodeSnippet() {
 
   const customStyle = {
     'backgroundColor': '#011221',
-    'border-radius': '1.5rem',
-  };
+    'borderRadius': '1.5rem',
+    };
 
 
   return (
     <div className="border border-default-border-color rounded-3xl">
       <SyntaxHighlighter language="typescript" style={nightOwl} customStyle={customStyle}>
-        {code}
+        {props.code}
       </SyntaxHighlighter>
     </div>
   )

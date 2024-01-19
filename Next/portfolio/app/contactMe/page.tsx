@@ -5,12 +5,20 @@ import FormTextArea from "../Components/form/FormTextArea"
 import CodeSnippet from "../Components/card/CodeSnippet"
 import { useState } from "react";
 
+
+function addNewLines(str: string , maxLength: number) {
+  let result = '';
+  for (let i = 0; i < str.length; i += maxLength) {
+      result += str.substring(i, i + maxLength) + '\n' + ' '.repeat(14) ;
+  }
+  return result;
+}
+
 export default function Section() {
 
   const [inputNameValue, setInputNameValue] = useState('');
   const [inputEmaileValue, setInputEmailValue] = useState('');
   const [inputDescriptionValue, setInputDescriptionValue] = useState('');
-
 
   const code = `
   const button = document.querySelector('#sendBtn');
@@ -18,10 +26,10 @@ export default function Section() {
   const message = {
     name: "${inputNameValue}",
     email: "${inputEmaileValue}",
-    message: "${inputDescriptionValue}",
+    message: "${inputDescriptionValue.length < 30 ?  inputDescriptionValue : addNewLines(inputDescriptionValue, 30)}",
     date: "${new Date().toDateString()}"
   }
-  
+
   button.addEventListener('click', () => {
     form.send(message);
   })
@@ -47,13 +55,12 @@ export default function Section() {
                 onChange={e => setInputEmailValue(e.target.value)}
               />
 
-            <FormTextArea 
-              Label="_message" 
-              Name="message"
-              Value={inputDescriptionValue}
-              onChange={e => setInputDescriptionValue(e.target.value)}
-            />
-              
+              <FormTextArea 
+                Label="_message" 
+                Name="message"
+                Value={inputDescriptionValue}
+                onChange={e => setInputDescriptionValue(e.target.value)}
+              />
             </div>
 
             <div className="py-5 px-2 self-start">
@@ -61,10 +68,9 @@ export default function Section() {
             </div>
           </div>
       </div>
-        
+
       <div className="flex items-center justify-center">
-        <div className="flex text-default-text-color">
-          <span className="text-left text-base"></span>
+        <div className="flex text-default-text-color">  
           <CodeSnippet code={code}/>
         </div>
       </div>

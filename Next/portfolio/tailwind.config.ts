@@ -22,6 +22,7 @@ const config: Config = {
       colors:{
         'default-border-color': '#1d2b39',
         'default-text-color': '#607B96',
+        'default-bg-color': '#011627'
       }
     },
   },

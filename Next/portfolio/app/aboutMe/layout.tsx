@@ -24,7 +24,7 @@ export default function AboutMeLayout({
     <div className='bg-[#011627] flex '>
       <SideBarAboutMe isPageAboutMe> 
 
-        <FaqSection name='personal-info'>
+        <FaqSection name='personal-info' isOpen>
           <FolderInfo folder={BioFolder} summaryText='bio' detailsDescription='personal-info'/>
           <FolderInfo folder={InterestsFolder} summaryText='interests' detailsDescription='technology'/>
           <FolderInfo folder={EducationFolder} summaryText='education' detailsDescription='university'/>

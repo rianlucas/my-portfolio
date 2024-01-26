@@ -1,5 +1,5 @@
 import SyntaxHighlighter from "react-syntax-highlighter/dist/esm/default-highlight"
-import { nightOwl } from "react-syntax-highlighter/dist/esm/styles/hljs"
+import { dracula, nightOwl } from "react-syntax-highlighter/dist/esm/styles/hljs"
 
 interface CodeSnippetProps {
   code: string;
@@ -15,7 +15,7 @@ export default function CodeSnippet(props: CodeSnippetProps) {
 
   return (
     <div className="border border-default-border-color rounded-3xl xl:max-w-md 2xl:max-w-3xl">
-      <SyntaxHighlighter language="typescript" style={nightOwl} customStyle={customStyle}>
+      <SyntaxHighlighter showLineNumbers wrapLines language="typescript" style={nightOwl} customStyle={customStyle}>
         {props.code}
       </SyntaxHighlighter>
     </div>

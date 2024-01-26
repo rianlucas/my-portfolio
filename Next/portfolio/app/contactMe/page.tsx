@@ -5,15 +5,6 @@ import FormTextArea from "../Components/form/FormTextArea"
 import CodeSnippet from "../Components/card/CodeSnippet"
 import { useState } from "react";
 
-
-function addNewLines(str: string , maxLength: number) {
-  let result = '';
-  for (let i = 0; i < str.length; i += maxLength) {
-      result += str.substring(i, i + maxLength) + '\n' + ' '.repeat(14) ;
-  }
-  return result;
-}
-
 export default function Section() {
 
   const [inputNameValue, setInputNameValue] = useState('');
@@ -26,7 +17,7 @@ export default function Section() {
   const message = {
     name: "${inputNameValue}",
     email: "${inputEmaileValue}",
-    message: "${inputDescriptionValue.length < 30 ?  inputDescriptionValue : addNewLines(inputDescriptionValue, 30)}",
+    message: "${inputDescriptionValue}",
     date: "${new Date().toDateString()}"
   }
 

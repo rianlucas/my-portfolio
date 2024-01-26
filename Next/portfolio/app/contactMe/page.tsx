@@ -61,8 +61,8 @@ export default function Section() {
       </div>
 
       <div className="flex items-center justify-center">
-        <div className="flex text-default-text-color">  
-          <CodeSnippet code={code}/>
+        <div className="flex text-default-text-color xl:max-w-lg 2xl:max-w-3xl overflow-x-scroll">  
+          <CodeSnippet code={code} showLineNumbers/>
         </div>
       </div>
 

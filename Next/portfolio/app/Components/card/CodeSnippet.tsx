@@ -3,19 +3,21 @@ import { dracula, nightOwl } from "react-syntax-highlighter/dist/esm/styles/hljs
 
 interface CodeSnippetProps {
   code: string;
+  backgroundColor?: string;
+  showLineNumbers?: boolean;
 }
 
 export default function CodeSnippet(props: CodeSnippetProps) {
-  const customStyle = {
-    'backgroundColor': '#011221',
-    'borderRadius': '1.5rem',
-    'word-wrap': 'normal'
-    };
-
+  const defaultBackgroudnColor = '#011627';
 
   return (
-    <div className="border border-default-border-color rounded-3xl xl:max-w-md 2xl:max-w-3xl">
-      <SyntaxHighlighter showLineNumbers wrapLines language="typescript" style={nightOwl} customStyle={customStyle}>
+    <div className="rounded-3xl">
+      <SyntaxHighlighter
+       showLineNumbers={props.showLineNumbers} 
+       wrapLines 
+       language="typescript" 
+       style={nightOwl} 
+       customStyle={{'backgroundColor': props.backgroundColor || defaultBackgroudnColor, 'borderRadius': '1.5rem'}}>
         {props.code}
       </SyntaxHighlighter>
     </div>

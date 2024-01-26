@@ -24,7 +24,10 @@ export default function ProjectCard(props: ProjectCardProps) {
       <div className='bg-[#011221]'>
         <p className='p-7 text-default-text-color text-lg'>{props.description}</p>
         <div className='pb-6 px-7'>
-          <SubmitButton buttonName='view-project' />
+          <SubmitButton 
+            buttonName='view-project' 
+            link="#"
+          />
         </div>
       </div>
 

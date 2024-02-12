@@ -1,18 +1,21 @@
-import DescribeLine from "../DescribeLine"
+import DescribeLine from "../DescribeLine";
+import CodeSnippet from "../../card/CodeSnippet";
 
-export default function PersonalInfo(){
-  return(
-    <div className="text-default-text-color">
-      <DescribeLine line={1} text="/**"/>
-      <DescribeLine line={2} text="* Sobre mim"/>
-      <DescribeLine line={3} text="* Trabalho com desenvolvimento Web "/>
-      <DescribeLine line={4} text="* Desde janeiro de 2023"/>
-      <DescribeLine line={5} text="* Utilizo principalmente Php"/>
-      <DescribeLine line={6} text="* Mas tecnologias como Nodejs"/>
-      <DescribeLine line={7} text="* MySql, Docker e Aws fazem parte"/>
-      <DescribeLine line={8} text="* Dos meus conhecimentos como "/>
-      <DescribeLine line={9} text="* Desenvolvedor."/>
-      <DescribeLine line={10} text="*/"/>
+export default function PersonalInfo() {
+  const code = `    /**
+    Sobre mim
+    Trabalho com desenvolvimento Web
+    Desde janeiro de 2023
+    Utilizo principalmente Php
+    Mas tecnologias como Nodejs
+    MySql, Docker e Aws fazem parte
+    Dos meus conhecimentos como
+    Desenvolvedor.
+   */`;
+
+  return (
+    <div className="text-default-text-color ml-5">
+      <CodeSnippet code={code} showLineNumbers backgroundColor="#011627" />
     </div>
-  )
+  );
 }

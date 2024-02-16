@@ -1,4 +1,3 @@
-import DescribeLine from "../DescribeLine";
 import CodeSnippet from "../../card/CodeSnippet";
 
 export default function PersonalInfo() {
